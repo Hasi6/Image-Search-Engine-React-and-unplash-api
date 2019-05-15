@@ -8,12 +8,12 @@ var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var flash = require('express-flash');
 
-
+var secret = require('./config/secret');
 var User = require('./models/user');
 
 var app = express();
 
-mongoose.connect('mongodb+srv://Hasitha:Freedom6@ecommerce-tmulj.mongodb.net/test?retryWrites=true', function(err) {
+mongoose.connect(secret.database, function(err) {
     if (err) {
         console.log(err);
     } else {
@@ -28,7 +28,7 @@ app.use(cookieParser());
 app.use(session({
     resave: true,
     saveUninitialized: true,
-    secret: "Hasitha6@"
+    secret: secret.secretKey
 }))
 app.use(flash());
 
@@ -44,7 +44,7 @@ app.use(userRoutes);
 
 
 
-app.listen(3200, function(err) {
+app.listen(secret.port, function(err) {
     if (err) throw err;
-    console.log('Server is Running on port 3200');
+    console.log('Server is Running on port ' + secret.port);
 });
