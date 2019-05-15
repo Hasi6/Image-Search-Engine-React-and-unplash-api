@@ -1,5 +1,6 @@
 module.exports = {
-    database: 'mongodb+srv://Hasitha:Freedom6@ecommerce-tmulj.mongodb.net/test?retryWrites=true',
-    port: 3200,
-    secretKey: "Hasitha6@"
+
+  database: 'mongodb://root:abc123@ds037095.mongolab.com:37095/ecommerce',
+  port: 3200,
+  secretKey: "Hasitha6@"
 }
