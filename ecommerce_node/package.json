@@ -1,20 +1,23 @@
 {
-  "name": "ecommerce_node",
+  "name": "ecommerce",
   "version": "1.0.0",
-  "description": "This is an ecommerce web site",
+  "description": "Ecommerce web site in nodejs",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "\u001b"
   },
   "author": "Hasitha",
   "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
     "ejs": "^2.6.1",
     "ejs-mate": "^3.0.0",
     "express": "^4.16.4",
-    "mongoose": "^5.5.5",
+    "express-flash": "0.0.2",
+    "express-session": "^1.16.1",
+    "mongoose": "^5.5.8",
     "morgan": "^1.9.1"
   }
 }
