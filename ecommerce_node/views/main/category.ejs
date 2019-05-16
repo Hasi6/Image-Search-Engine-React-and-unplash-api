@@ -1,0 +1,26 @@
+<% layout('layout') -%>
+
+    <div class="container">
+        <div class="row">
+            <% for( var i = 0; i< products.length; i++) { %>}
+                <div class="col-md-4">
+                    <a href="/products/<%= products[i]._id %>">
+                        <div class="card">
+                            <img src="<%= products[i].image %>" alt="">
+                            <div class="card card-body">
+                                <h3>
+                                    <%= products[i].name %>
+                                </h3>
+                                <p>
+                                    <%= products[i].category.name %>
+                                </p>
+                                <p>
+                                    <%= products[i].price %>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <% } %>
+        </div>
+    </div>
