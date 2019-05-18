@@ -5,9 +5,9 @@
             <% for( var i = 0; i< products.length; i++) { %>}
                 <div class="col-md-4">
                     <a href="/products/<%= products[i]._id %>">
-                        <div class="card">
-                            <img src="<%= products[i].image %>" alt="">
-                            <div class="card card-body">
+                        <div class="thumbnail">
+                            <img src="<%= products[i].image %>" class="card-img-top" alt="">
+                            <div class="caption">
                                 <h3>
                                     <%= products[i].name %>
                                 </h3>
