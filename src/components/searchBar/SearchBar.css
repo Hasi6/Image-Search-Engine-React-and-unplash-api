@@ -1,0 +1,11 @@
+.searchdiv{
+    /* display: flex; */
+    margin-top: 2vh;
+    width: 80%;
+    justify-items: center;
+    display: flex;
+    
+}
+.searchBar {
+    margin: 0 auto;
+}
